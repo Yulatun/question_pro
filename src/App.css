@@ -60,12 +60,18 @@
 }
 
 .result-score-line {
-  width: 30px;
-  height: 30px;
-  border-radius:50%;
-  background: azure;
-  z-index: -1;
+  width: 100%;
+
   font-size: 12px;
+  border-radius: 20px 20px 0px 0px;
+  flex-grow:3;
+  z-index: 40;
+}
+
+.result-score {
+  color: black;
+  z-index: 50;
+  font-weight: bold;
 }
 
 .feeling-name {
@@ -81,9 +87,8 @@
 
 .benchmark,
 .benchmark-legend {
-  width: 50px;
-  border-bottom: 1px dashed #B6B6B6;
-  margin-left:25px;
+  width: 60px;
+  border-bottom: 2px dashed #B6B6B6;
 }
 
 .benchmark-legend {
@@ -92,21 +97,26 @@
 }
 
 
-.benchmarkValue{
-  margin-top: 2px;
+.benchmarkValue {
+
+  font-weight: 800;
+  color: #CCCCCC;
+  position:absolute;
+  top: -10px;
+  left: 62px;
 }
 
 
 .midpoint {
   border: 1px solid black;
-  width: 200px;
+  width: 300%;
   position: absolute;
   bottom: 50%;
 }
 
 svg {
-  width: 34px;
-  height: 34px;
+  width: 44px;
+  height: 44px;
 }
 
 .legend {
@@ -120,6 +130,7 @@ svg {
   padding-bottom: 10px;
   font-family: 'Asap Condensed Regular';
   font-size: 14px;
+  align-items: center;
 }
 
 .legend-container {
@@ -133,10 +144,7 @@ svg {
   width: 60px;
 }
 
-.result-score-line-legend {
-  width: 46px;
-  margin-left: -2px;
-}
+
 
 
 
@@ -146,8 +154,8 @@ svg {
   margin-top: -2px;
 }
 
-.result-score-legend {
-  width: 30px;
+/* .result-score-legend {
+  width: 100%;
   height: 30px;
   margin-left: 10px;
   font-weight: 600;
@@ -160,7 +168,7 @@ svg {
     z-index: 20;
   
 
-}
+} */
 
 .body {
   display: flex;
@@ -171,10 +179,9 @@ svg {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100px;
-  /* padding: 5px; */
   margin: 0 5px;
-  justify-content: center;
+  justify-content: space-between;
+  height: 532px;
 }
 
 .circle {
@@ -183,7 +190,7 @@ svg {
   border-radius: 50%;
   background-color: #000000;
   position: relative;
-  margin-right: 16px;
+  margin: 10px 10px 0 0;
 }
 
 .plus-sign,
@@ -216,12 +223,12 @@ svg {
 }
 
 
-.fifty {
+/* .fifty {
   font-size: 12px;
   position: absolute;
   left: 50px;
   margin: 6px 0;
-}
+} */
 
 .circle-text {
   position: absolute;
@@ -234,7 +241,27 @@ svg {
 }
 
 .texttext {
-  margin-bottom: 10px;
   position: absolute;
+  right: -10px;
+  bottom: -13px;
 
+}
+
+.vertical-scale {
+  display: flex;
+  flex-direction: column-reverse; /* To display the scale from top to bottom */
+  height: 500px; /* Adjust the height as needed */
+  width: 40px; /* Adjust the width as needed */
+  background-color: #f5f5f5; /* Gray background color */
+}
+
+.scale-mark {
+  height: 10%; /* Adjust the height of each mark as needed */
+  border-bottom: 1px solid #999; /* Gray border */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 5px;
+  color: #999; /* Gray color for the marks */
+  font-size: 12px; /* Adjust the font size as needed */
 }

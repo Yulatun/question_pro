@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,24 +8,45 @@
   <meta name="description" content="custom chart" />
 
   <title> satisfaction chart </title>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
 </head>
 
 <body>
   <div id="root"></div>
+  <button id="downloadGraphBtn"> Download </button>
   <script>
+
     const data = [
-      { type: 'EvB', score: 2.125 },
-      { type: 'FvP', score: 0.625 },
-      { type: 'PvE', score: 6.0 },
-      { type: 'VvS', score: 0.5 },
-      { type: 'RvD', score: -5.125 },
-      { type: 'SvT', score: 0.375 },
-      { type: 'CvD', score: -2.6 },
-    ];
+      { type: 'EvB', score: -2.4 },
+      { type: 'FvP', score: 21.4 },
+      { type: 'PvE', score: 17.9 },
+      { type: 'VvS', score: 21.3 },
+      { type: 'RvD', score: 18.8 },
+      { type: 'SvT', score: 21.5 },
+      { type: 'CvD', score: 23.5 },
+    ]
     setTimeout(function () {
       InitSatisfactionChart('root', data);
     }, 100);
+
   </script>
+
+  <script>
+    document.getElementById('downloadGraphBtn').addEventListener('click', function () {
+      html2canvas(document.getElementById('root')).then(function (canvas) {
+        const link = document.createElement('a');
+        link.href = canvas.toDataURL('image/png');
+        link.download = 'graph.png';
+        //document.body.appendChild(canvas);
+        link.click();
+
+      });
+
+    });
+  </script>
+
 </body>
+
+
 
 </html>
