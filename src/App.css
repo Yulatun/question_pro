@@ -83,9 +83,8 @@
   font-weight: 800;
 }
 
-
 .benchmarkcontainer {
- display: flex;
+  display: flex;
 }
 
 .benchmark,
@@ -99,7 +98,6 @@
   
 }
 
-
 .benchmarkValue {
 
   font-weight: 800;
@@ -108,7 +106,6 @@
   top: -10px;
   left: 62px;
 }
-
 
 .midpoint {
   border: 1px solid black;
@@ -145,16 +142,10 @@ svg {
   width: 60px;
 }
 
-
-
-
-
-
 .description-legend {
   margin-left: 10px;
   margin-top: -2px;
 }
-
 
 .body {
   display: flex;
@@ -162,7 +153,6 @@ svg {
   height: 800px;
   justify-content: center;
 }
-
 
 .range {
   display: flex;
@@ -211,14 +201,6 @@ svg {
   margin-left: 80px;
 }
 
-
-/* .fifty {
-  font-size: 12px;
-  position: absolute;
-  left: 50px;
-  margin: 6px 0;
-} */
-
 .circle-text {
   position: absolute;
   top: 50%;
@@ -238,19 +220,19 @@ svg {
 
 .vertical-scale {
   display: flex;
-  flex-direction: column-reverse; /* To display the scale from top to bottom */
-  height: 500px; /* Adjust the height as needed */
-  width: 40px; /* Adjust the width as needed */
-  background-color: #f5f5f5; /* Gray background color */
+  flex-direction: column-reverse; 
+  height: 500px; 
+  width: 40px; 
+  background-color: #f5f5f5; 
 }
 
 .scale-mark {
-  height: 10%; /* Adjust the height of each mark as needed */
-  border-bottom: 1px solid #999; /* Gray border */
+  height: 10%; 
+  border-bottom: 1px solid #999; 
   display: flex;
   align-items: center;
   justify-content: flex-end;
   padding-right: 5px;
-  color: #999; /* Gray color for the marks */
-  font-size: 12px; /* Adjust the font size as needed */
+  color: #999; 
+  font-size: 12px; 
 }
