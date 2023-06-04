@@ -4,7 +4,7 @@ const GrayscaleScale = () => {
   const scaleValues = Array.from({ length: 11 }, (_, index) => index * 10 - 50).reverse();
 
   return (
-    <div style={{ height: '500px' }}>
+    <div style={{ alignSelf: 'center' }}>
       {scaleValues.map((value, index) => (
         <div
           key={value}
@@ -12,15 +12,14 @@ const GrayscaleScale = () => {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            color: '#CCCCCC',
+            color: '#808080',
           }}
         >
           {index !== scaleValues.length - 11 && (
             <div
               style={{
-                borderLeft: '2px solid #CCCCCC',
-                height: '36px',
-                // marginBottom: '10px',
+                borderLeft: '3px solid #e3e3e3',
+                height: '46px',
                 fontSize: '12px',
                 fontWeight: 'bold',
               }}

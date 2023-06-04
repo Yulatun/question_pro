@@ -52,11 +52,9 @@ export const ArrowChart = (props) => {
         >
           <div
             className='benchmark'
-            //style={{ position: 'absolute', bottom: benchmarkBottomValueToPass }}
           ></div>{' '}
           <div
             className='benchmarkValue'
-            // style={{ position: 'absolute', bottom: benchmarkBottomValueToPass }}
           >
             {props.benchmark}
           </div>
