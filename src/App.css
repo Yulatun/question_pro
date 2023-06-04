@@ -1,18 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,400;1,600&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,400;1,600&family=Courier+Prime:wght@700&display=swap');
-
-@import url('https://db.onlinewebfonts.com/c/6cec834e2e8f2e4206567ed75e1281d4?family=Brandon+Grotesque+Bold');
-
-@import url('https://db.onlinewebfonts.com/c/d46e3999fb41c5f4f83bf5364715b2e7?family=Brandon+Grotesque+Light');
-@font-face {font-family: "Brandon Grotesque Light";
-    src: url("http://db.onlinewebfonts.com/t/d46e3999fb41c5f4f83bf5364715b2e7.eot"); /* IE9*/
-    src: url("http://db.onlinewebfonts.com/t/d46e3999fb41c5f4f83bf5364715b2e7.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("http://db.onlinewebfonts.com/t/d46e3999fb41c5f4f83bf5364715b2e7.woff2") format("woff2"), /* chrome firefox */
-    url("http://db.onlinewebfonts.com/t/d46e3999fb41c5f4f83bf5364715b2e7.woff") format("woff"), /* chrome firefox */
-    url("http://db.onlinewebfonts.com/t/d46e3999fb41c5f4f83bf5364715b2e7.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
-    url("http://db.onlinewebfonts.com/t/d46e3999fb41c5f4f83bf5364715b2e7.svg#Brandon Grotesque Light") format("svg"); /* iOS 4.1- */
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: local('Brandon Grotesque'),
+    url('./Fonts/Brandon Grotesque/Brandon_bld.otf') format('OpenType');
+    font-weight: bold;
 }
+@font-face {
+  font-family: 'Brandon Grotesque Light';
+  src: local('Brandon Grotesque Light'),
+    url('./Fonts/Brandon Grotesque/Brandon_light.otf') format('OpenType');
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque Light Italic';
+  src: local('Brandon Grotesque Light Italic'),
+    url('./Fonts/Brandon Grotesque/Brandon_light_it.otf') format('OpenType');
+}
+
 .chart-container {
   display: flex;
   flex-direction: column;
@@ -31,8 +34,7 @@
   align-items: center;
   margin: 0 10px; 
   width: 100px;
-  height: 650px;
-  margin-top: 20px;
+  height: 760px;
 }
 
 .scale-body {
@@ -42,7 +44,7 @@
   margin: 20px 10px;
   position: relative;
   width:40%;
-  height: 500px;
+  height: 760px;
   z-index: 30;
   background-color:#E3E3E3;
   border-radius: 45px;
@@ -50,13 +52,14 @@
 
 .feeling-description,
 .title-feeling {
-  font-family: 'Brandon Grotesque Light Italic, Asap Condensed', sans-serif;;
+  font-family: 'Brandon Grotesque Light Italic';
   font-size: 8px;
   text-align: center;
+  height: 20px;
 }
 
 .feeling-description {
-    height: 30px;
+    height: 20px;
 }
 
 .result-score-line {
@@ -75,7 +78,7 @@
 }
 
 .feeling-name {
-  font-family: 'Brandon Grotesque Bold';
+  font-family: 'Brandon Grotesque';
   font-size: 14px;
   font-weight: 800;
 }
@@ -123,12 +126,10 @@ svg {
   display: flex;
   justify-content: flex-end;
   width: 780px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Brandon Grotesque Light';
   margin: 10px;
   position: relative;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-family: 'Asap Condensed Regular';
+  padding: 0 10px;
   font-size: 14px;
   align-items: center;
 }
@@ -154,24 +155,12 @@ svg {
   margin-top: -2px;
 }
 
-/* .result-score-legend {
-  width: 100%;
-  height: 30px;
-  margin-left: 10px;
-  font-weight: 600;
-  color: black;
-  text-align: center;
-  box-shadow: 2px 2px 2px gray;
-  font-size: 10px;
-  margin-bottom: -5px;
-  border-radius:50%;
-    z-index: 20;
-  
-
-} */
 
 .body {
   display: flex;
+  width: 1000px;
+  height: 800px;
+  justify-content: center;
 }
 
 
@@ -181,7 +170,7 @@ svg {
   align-items: center;
   margin: 0 5px;
   justify-content: space-between;
-  height: 532px;
+  height: 632px;
 }
 
 .circle {
@@ -190,7 +179,7 @@ svg {
   border-radius: 50%;
   background-color: #000000;
   position: relative;
-  margin: 10px 10px 0 0;
+  margin: 0 10px;
 }
 
 .plus-sign,
