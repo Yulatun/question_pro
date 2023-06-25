@@ -1,7 +1,8 @@
 # The initialization code
 ```html
 <div id="chartID"></div>
-<link href="https://spike4848.github.io/mindlode_question_pro/static/css/main.3b0a02ab.css" rel="stylesheet" /><script>
+<link href="https://spike4848.github.io/mindlode_question_pro/static/css/main.726ae075.css" rel="stylesheet" />
+<script>
   const data = [
     { type: "EvB", score: 20.125 },
     { type: "FvP", score: .625 },
@@ -12,7 +13,11 @@
     { type: "CvD", score: -2.6 }
   ];
   window.SatisfactionChartScriptOnLoad = (function () { InitSatisfactionChart("chartID", data) });
-</script><script defer="defer" src="https://spike4848.github.io/mindlode_question_pro/static/js/main.3589df44.js"></script>
+</script>
+<script defer="defer" src="https://spike4848.github.io/mindlode_question_pro/static/js/main.05dce076.js"></script>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+<button class="download-graph-Btn" id="download-graph-Btn"> Download </button>
+<script>document.getElementById("download-graph-Btn").addEventListener("click", (function () { html2canvas(document.getElementById("chartID")).then((function (n) { const t = document.createElement("a"); t.href = n.toDataURL("image/png"), t.download = "Graph", t.click() })) }))</script>
 ```
 
 ## The default settings
