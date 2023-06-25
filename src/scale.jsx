@@ -19,7 +19,7 @@ const GrayscaleScale = () => {
             <div
               style={{
                 borderLeft: '3px solid #e3e3e3',
-                height: '46px',
+                height: '38px',
                 fontSize: '12px',
                 fontWeight: 'bold',
               }}
