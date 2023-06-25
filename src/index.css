@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.download-graph-Btn {
+  background-color: #FD9936; 
+  position: absolute;
+  left:50%;
+  height: 30px;
+  width: 100px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color:#2A5565;
+  margin: 15px 10px;
+}
+
+.download-graph-Btn:hover {
+  background-color: #FFBF2A ; 
+}

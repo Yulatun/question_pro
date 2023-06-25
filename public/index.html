@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="custom chart" />
-
   <title> satisfaction chart </title>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
 </head>
 
 <body>
@@ -15,7 +15,7 @@
   <script>
 
     const data = [
-      { type: 'EvB', score: -49 },
+      { type: 'EvB', score: -39 },
       { type: 'FvP', score: 50 },
       { type: 'PvE', score: 17.9 },
       { type: 'VvS', score: 21.3 },
@@ -26,8 +26,9 @@
     setTimeout(function () {
       InitSatisfactionChart('root', data);
     }, 100);
-
   </script>
+  <button id="download-graph-Btn" class="download-graph-Btn">Download</button>
+  <script>document.getElementById("download-graph-Btn").addEventListener("click", (function () { html2canvas(document.getElementById("root")).then((function (n) { const e = document.createElement("a"); e.href = n.toDataURL("image/png"), e.download = "MindLode Graph.png", e.click() })) }))</script>
 </body>
 
 

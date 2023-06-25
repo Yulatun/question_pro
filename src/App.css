@@ -21,12 +21,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+  height: 800px;
 }
 .main-container-all-scales {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 750px;
 }
 .scale-container {
   display: flex;
@@ -43,10 +44,10 @@
   align-items: center;
   margin: 20px 10px;
   position: relative;
-  width:40%;
+  width: 40%;
   height: 760px;
   z-index: 30;
-  background-color:#E3E3E3;
+  background-color: #e3e3e3;
   border-radius: 45px;
 }
 
@@ -59,21 +60,20 @@
 }
 
 .feeling-description {
-    height: 20px;
+  height: 20px;
 }
 
 .result-score-line {
   width: 100%;
-
   font-size: 12px;
   border-radius: 20px 20px 0px 0px;
-  flex-grow:3;
+  flex-grow: 3;
   z-index: 40;
 }
 
 .result-score {
   color: black;
-  z-index: 50;
+  z-index: 60;
   font-weight: bold;
 }
 
@@ -90,19 +90,17 @@
 .benchmark,
 .benchmark-legend {
   width: 60px;
-  border-bottom: 2px dashed #B6B6B6;
+  border-bottom: 2px dashed #b6b6b6;
 }
 
 .benchmark-legend {
   width: 20px;
-  
 }
 
 .benchmarkValue {
-
   font-weight: 800;
-  color: #CCCCCC;
-  position:absolute;
+  color: #cccccc;
+  position: absolute;
   top: -10px;
   left: 62px;
 }
@@ -112,6 +110,7 @@
   width: 300%;
   position: absolute;
   bottom: 50%;
+  z-index: 60;
 }
 
 svg {
@@ -135,7 +134,6 @@ svg {
   display: flex;
   margin-top: 2px;
   align-items: center;
-
 }
 
 .midpoint-legend {
@@ -184,7 +182,7 @@ svg {
 }
 
 .plus-sign::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 4px;
   height: 18px;
@@ -197,7 +195,7 @@ svg {
 .line {
   width: 2px;
   height: 80%;
-  background-color: #E3E3E3;
+  background-color: #e3e3e3;
   margin-left: 80px;
 }
 
@@ -215,24 +213,23 @@ svg {
   position: absolute;
   right: -10px;
   bottom: -13px;
-
 }
 
 .vertical-scale {
   display: flex;
-  flex-direction: column-reverse; 
-  height: 500px; 
-  width: 40px; 
-  background-color: #f5f5f5; 
+  flex-direction: column-reverse;
+  height: 500px;
+  width: 40px;
+  background-color: #f5f5f5;
 }
 
 .scale-mark {
-  height: 10%; 
-  border-bottom: 1px solid #999; 
+  height: 10%;
+  border-bottom: 1px solid #999;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   padding-right: 5px;
-  color: #999; 
-  font-size: 12px; 
+  color: #999;
+  font-size: 12px;
 }
