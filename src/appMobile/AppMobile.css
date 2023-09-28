@@ -1,0 +1,230 @@
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: local('Brandon Grotesque'),
+    url('../Fonts/Brandon Grotesque/Brandon_reg.otf') format('OpenType');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Brandon Grotesque Light';
+  src: local('Brandon Grotesque Light'),
+    url('../Fonts/Brandon Grotesque/Brandon_light.otf') format('OpenType');
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque Light Italic';
+  src: local('Brandon Grotesque Light Italic'),
+    url('../Fonts/Brandon Grotesque/Brandon_light_it.otf') format('OpenType');
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque Bold';
+  src: local('Brandon Grotesque Bold'),
+    url('../Fonts/Brandon Grotesque/Brandon_bld.otf') format('OpenType');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Adonis Bold';
+  src: local('Adonis Bold'), url('../Fonts/Adonis/Adonis_Regular.otf');
+}
+
+.root {
+  font-size: 16px;
+}
+
+.chart-container-mb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  width: 100vw;
+}
+
+.main-container-all-scales-mb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.app-mobile-container-mb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.gray-scale-container-mb {
+  width: 20rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #969696;
+  font-size: 0.75rem;
+}
+
+.stripe-mb {
+  width: 100%;
+  align-items: center;
+  background-color: #e6e6e6;
+  height: 0.15rem;
+  margin: 0 0.2rem;
+}
+
+.legend-mb {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0.4rem 0;
+  font-family: 'Brandon Grotesque Light';
+}
+
+.legend-mb > *:not(:last-child) {
+  margin-right: 1rem; /* Adjust this value to your desired space */
+}
+
+.circle-your-score-icon-mb,
+.circle-your-score-icon-legend-mb {
+  display: flex; /* Using Flexbox to center content */
+  align-items: center; /* Vertical center */
+  justify-content: center; /* Horizontal center */
+  width: 2rem; /* Diameter of the circle */
+  height: 2rem; /* Diameter of the circle */
+  border-radius: 50%; /* Makes it a circle */
+  font-size: 1rem; 
+  font-weight: bold; 
+  background-color: white;
+  z-index: 20;
+  margin-left: -1rem;
+  font-family: 'Brandon Grotesque Bold';
+}
+.circle-your-score-icon-legend-mb {
+  width: 1.15rem;
+  height: 1.15rem;
+  font-size: 0.75rem;
+  padding: 0.2rem;
+}
+
+.benchmark-legend-mb {
+  border-right: 2px dashed #000000;
+  height: 2rem;
+  border-bottom-color: transparent;
+}
+
+.direction-scale-container-mb {
+  display: flex;
+  width: 22rem;
+  align-items: center;
+  justify-content: space-between;
+  height: 2rem;
+}
+
+.text-direction-scale-mb,
+.text-direction-scale-left-mb,
+.text-direction-scale-right-mb {
+  font-size: 0.75rem;
+  margin: 0.5rem 0;
+  font-family: 'Brandon Grotesque Bold';
+}
+
+.scale-container-mb {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 5rem;
+  margin: 1rem 0;
+  flex-grow: 0;
+  padding: 0.5rem 0;
+}
+
+.scale-body-mb {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0.5rem;
+  position: relative;
+  height: 40%;
+  width: 40%;
+  background-color: #e3e3e3;
+  border-radius: 45px;
+  position: relative;
+}
+
+.feeling-mb {
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: fit-content;
+}
+
+.feeling-description-mb,
+.title-feeling-mb {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: 'Brandon Grotesque Light';
+  font-size: 1.2rem;
+  text-align: center;
+  align-items: center;
+}
+
+.feeling-description-mb {
+  line-height: 1rem;
+  font-family: 'Brandon Grotesque Light Italic';
+}
+
+.feeling-name-mb {
+  font-family: 'Adonis Bold';
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin-left: 0.2rem;
+}
+
+.benchmarkcontainer-mb {
+  display: flex;
+  flex-direction: column;
+}
+.benchmarkValue-mb {
+  font-weight: 800;
+  color: #000000;
+  position: absolute;
+  bottom: 3rem;
+  left: -0.5rem;
+  font-size: 0.8rem;
+}
+.benchmark-mb {
+  height: 3rem;
+  border-left: 2px dashed #000000;
+}
+
+.midpoint-mb {
+  height: 4rem;
+  position: absolute;
+  left: 50%;
+  z-index: 10;
+  border-left: 2px solid #8a8a8a;
+}
+
+.introduction-mb {
+  font-family: 'Brandon Grotesque';
+  margin: 0.5rem 1.2rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  padding: 0 1rem;
+}
+
+.description-legend-mb {
+  margin-right: 1rem;
+}
+
+.text-direction-scale-left-mb {
+  color: #ff0000;
+}
+
+.text-direction-scale-right-mb {
+  color: #009145;
+}

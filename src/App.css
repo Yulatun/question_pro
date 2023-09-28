@@ -16,6 +16,11 @@
     url('./Fonts/Brandon Grotesque/Brandon_light_it.otf') format('OpenType');
 }
 
+@font-face {
+  font-family: 'Adonis Bold';
+  src: local('Adonis Bold'), url('./Fonts/Adonis/Adonis_Regular.otf');
+}
+
 .chart-container {
   display: flex;
   flex-direction: column;
@@ -35,7 +40,7 @@
   flex-direction: column;
   align-items: center;
   margin: 0 10px; 
-  width: 100px;
+  width: 116px;
   height: 700px;
 }
 
@@ -43,10 +48,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px 10px;
+  margin: 10px 10px;
   position: relative;
   width: 40%;
-  height: 600px;
+  height: 560px;
   z-index: 30;
   background-color: #e3e3e3;
   border-radius: 45px;
@@ -54,14 +59,16 @@
 
 .feeling-description,
 .title-feeling {
-  font-family: 'Brandon Grotesque Light Italic';
-  font-size: 8px;
+  font-family: 'Brandon Grotesque Light';
+  font-size: 16px;
   text-align: center;
   height: 20px;
+  line-height: 14px;
 }
 
 .feeling-description {
   height: 40px;
+  font-family: 'Brandon Grotesque Light Italic';
 }
 
 .result-score-line {
@@ -82,6 +89,7 @@
   font-family: 'Brandon Grotesque';
   font-size: 14px;
   font-weight: 800;
+  font-family: 'Adonis Bold';
 }
 
 .benchmarkcontainer {
@@ -91,7 +99,7 @@
 .benchmark,
 .benchmark-legend {
   width: 60px;
-  border-bottom: 2px dashed #b6b6b6;
+  border-bottom: 2px dashed #000000;
 }
 
 .benchmark-legend {
@@ -100,7 +108,7 @@
 
 .benchmarkValue {
   font-weight: 800;
-  color: #cccccc;
+  color: #000000;
   position: absolute;
   top: -10px;
   left: 62px;
@@ -114,15 +122,10 @@
   z-index: 60;
 }
 
-svg {
-  width: 44px;
-  height: 44px;
-}
-
 .legend {
   display: flex;
   justify-content: flex-end;
-  width: 780px;
+  width: 1000px;
   font-family: 'Brandon Grotesque Light';
   margin: 10px;
   position: relative;
@@ -159,7 +162,7 @@ svg {
   align-items: center;
   margin: 0 5px;
   justify-content: space-between;
-  height: 548px;
+  height: 630px;
 }
 
 .circle {

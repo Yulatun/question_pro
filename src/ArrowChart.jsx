@@ -18,10 +18,15 @@ export const ArrowChart = (props) => {
 
   return (
     <div className='scale-container'>
-      <div className='title-feeling'>feeling</div>
-      <div className='feeling-name' style={{ color: props.color }}>
-        {props.topTextName}
+      <div className='title-feeling'>
+        feeling{' '}
+        <span className='feeling-name' style={{ color: props.color }}>
+          {props.topTextName}
+        </span>
       </div>
+      {/* <div className='feeling-name' style={{ color: props.color }}>
+        {props.topTextName}
+      </div> */}
       <div className='feeling-description'>{props.topTextDescription}</div>
       <div className='scale-body'>
         <div className='midpoint'></div>
@@ -50,19 +55,15 @@ export const ArrowChart = (props) => {
           className='benchmarkcontainer'
           style={{ position: 'absolute', bottom: benchmarkBottomValueToPass }}
         >
-          <div
-            className='benchmark'
-          ></div>{' '}
-          <div
-            className='benchmarkValue'
-          >
-            {props.benchmark}
-          </div>
+          <div className='benchmark'></div>{' '}
+          <div className='benchmarkValue'>{props.benchmark}</div>
         </div>
       </div>
-      <div className='title-feeling'>feeling</div>
-      <div className='feeling-name' style={{ color: props.color }}>
-        {props.bottomText}
+      <div className='title-feeling'>
+        feeling{' '}
+        <span className='feeling-name' style={{ color: props.color }}>
+          {props.topTextName}
+        </span>
       </div>
       <div className='feeling-description'>{props.bottomTextDescription}</div>
     </div>

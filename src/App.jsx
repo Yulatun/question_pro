@@ -1,7 +1,7 @@
 import './App.css';
 import { ArrowChart } from './ArrowChart';
 import { defaultSettings } from './defaultSettings';
-import GrayscaleScale from './scale';
+import GrayscaleScale from './GrayscaleScale';
 
 function App({ data = [], settings = {} }) {
   return (
@@ -17,7 +17,7 @@ function App({ data = [], settings = {} }) {
             <div className='circle'>
               <div className='plus-sign'></div>
               <div className='texttext'>
-                <svg viewBox='0 0 100 100' width='100' height='100'>
+                <svg viewBox='0 0 100 100' width='44' height='44'>
                   <defs>
                     <path
                       id='circle'
@@ -34,13 +34,13 @@ function App({ data = [], settings = {} }) {
                 </svg>
               </div>
 
-              {/* <div class='circle-text'>Positive Engagement</div> */}
+          
             </div>
 
             <div className='circle'>
               <div className='minus-sign'></div>
               <div className='texttext'>
-                <svg viewBox='0 0 100 100' width='100' height='100'>
+                <svg viewBox='0 0 100 100' width='44' height='44'>
                   <defs>
                     <path
                       id='circle'
